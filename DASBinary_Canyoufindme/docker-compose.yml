@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+ can_you_find_me:
+  build:
+   context: .
+  ports:
+   - 9999:12000
+  tty: true
+
+
