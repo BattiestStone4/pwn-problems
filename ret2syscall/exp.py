@@ -3,6 +3,7 @@ sh = process("./ret2sys")
 #context.log_level = 'debug'
 #context.terminal = ['tmux', 'splitw', '-h']
 #sh = remote("120.79.17.251",10005)
+gdb.attach(sh)
 pop_eax = 0x080bb2c6 
 pop_edx_ecx_ebx = 0x0806ecb0
 bss = 0x080eb000
